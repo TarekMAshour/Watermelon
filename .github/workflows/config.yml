@@ -1,0 +1,17 @@
+name: Watermelon
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+  runs-on: windows-latest
+
+  steps:
+      with:
+        python-version: 3.8  # Specify your desired Python version
+
+    - name: Install dependencies
+      run: pip install Csv
+
